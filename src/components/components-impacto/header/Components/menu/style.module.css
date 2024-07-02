@@ -1,0 +1,15 @@
+.animationMenu {
+  animation: openMenu ease 800ms;
+}
+
+@keyframes openMenu {
+  from {
+    top: -100%;
+    opacity: 0;
+  }
+
+  to {
+    top: 4.5rem;
+    opacity: 1;
+  }
+}

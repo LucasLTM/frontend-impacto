@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impacto</title>
+  </head>
+
+  <body class="font-montserrat">
+    <div id="root"></div>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script>
+      (function () {
+        var s = document.createElement("script");
+        var h = document.querySelector("head") || document.body;
+        s.charset = "UTF-8";
+        s.src = "https://cdn.assistive.com.br/plugin/AssistiveWebPlugin.js";
+        s.async = true;
+        s.onload = function () {
+          assistive.init({});
+        };
+        h.appendChild(s);
+      })();
+    </script>
+  </body>
+</html>
