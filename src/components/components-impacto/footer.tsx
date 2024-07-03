@@ -20,18 +20,18 @@ function Footer() {
                         </ul>
                     </div>
                     <div className="flex flex-col text-center items-center space-y-4 flex-1">
-                        <ul className="text-[18px] text-[#262E30] font-[500] ">
+                        <ul className="text-[18px] text-[#262E30] font-[500]">
                             <li className="p-2">
                                 <h3 className="text-2xl font-medium text-[#004358] pb-5">Doação</h3>
                             </li>
-                            <li className="p-2">
-                                <a href="#">Importância da doação</a>
+                            <li className="p-2 mb-7">
+                                <NavLink to="/doacaofooter"><p>Importância da doação</p></NavLink>
+                            </li>
+                            <li className="p-2 mb-7">
+                                <NavLink to="/doacaofooter">Benefícios da doação</NavLink>
                             </li>
                             <li className="p-2">
-                                <a href="#">Benefícios da doação</a>
-                            </li>
-                            <li className="p-2">
-                                <a href="#">ONG's cadastradas</a>
+                            <NavLink to="/doacaofooter">ONG's cadastradas</NavLink>
                             </li>
                         </ul>
                     </div>
@@ -40,11 +40,11 @@ function Footer() {
                             <li className="p-2">
                                 <h3 className="text-2xl font-medium text-[#004358] pb-5">ONG</h3>
                             </li>
-                            <li className="p-2">
-                                <a href="#">Cadastrar minha ONG</a>
+                            <li className="p-2 mb-7">
+                                <NavLink to="/register">Cadastrar minha ONG</NavLink>
                             </li>
                             <li className="p-2">
-                                <a href="#">Benefícios oferecidos</a>
+                            <NavLink to="/ongfooter">Benefícios oferecidos</NavLink>
                             </li>
                         </ul>
                     </div>

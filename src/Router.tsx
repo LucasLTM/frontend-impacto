@@ -14,6 +14,7 @@ import { CriarRifa } from "./pages/Rifa/CriarRifa/rifa";
 import { PerfilOng } from "./pages/PerfilOng/perfil";
 import { EditarRifa } from "./pages/Rifa/EditarRifa/editarrifa";
 import { DoacaoFooter } from "./pages/ConteudoFooter/DoaçãoFooter/DoacaoFooter";
+import { OngFooter } from "./pages/ConteudoFooter/OngFooter/OngFooter";
 
 export function Router(){
   return(
@@ -28,7 +29,8 @@ export function Router(){
         <Route path="/rifa" element={<CriarRifa />} />
         <Route path="/rifa/edit" element={<EditarRifa />} />
         <Route path="/perfilong" element={<PerfilOng />} />
-        <Route path="/doaçãofooter" element={<DoacaoFooter />} />
+        <Route path="/doacaofooter" element={<DoacaoFooter />} />
+        <Route path="/ongfooter" element={<OngFooter />} />
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
